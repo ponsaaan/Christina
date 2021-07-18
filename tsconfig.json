@@ -22,7 +22,9 @@
   "moduleResolution": "node",
   "resolveJsonModule": true,
   "isolatedModules": true,
-  "baseUrl": "./",
+  "baseUrl": "src",
+  "allowSyntheticDefaultImports": true,
+  "noFallthroughCasesInSwitch": true,
   "lib": [
     "DOM",
     "ESNext"
@@ -30,6 +32,6 @@
   "paths": {
     "@/*": ["src/*"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".eslintrc.js"],
+  "include": ["next-env.d.ts", "src/**/*", ".eslintrc.js"],
   "exclude": ["node_modules"]
 }
