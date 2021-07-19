@@ -15,10 +15,7 @@ const Home: React.VFC = () => {
       <GlobalStyle />
       <Main>
         <Title>
-          Read{' '}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
+          Read <p>this page!</p>
         </Title>
 
         <Description>
