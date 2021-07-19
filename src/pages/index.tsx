@@ -14,9 +14,7 @@ const Home: React.VFC = () => {
       </Head>
       <GlobalStyle />
       <Main>
-        <Title>
-          Read <p>this page!</p>
-        </Title>
+        <Title>Hello, Christina!</Title>
 
         <Description>
           Get started by editing <Code>pages/index.js</Code>
