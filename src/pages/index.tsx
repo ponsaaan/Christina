@@ -15,7 +15,15 @@ const Home: React.VFC = () => {
         <Navigation>
           <UpperNav>
             <LogoArea>ロゴ</LogoArea>
-            <MainArea>メイン</MainArea>
+            <MainArea>
+              <Item>ホーム</Item>
+              <Item>話題の検索</Item>
+              <Item>通知</Item>
+              <Item>メッセージ</Item>
+              <Item>ブックマーク</Item>
+              <Item>リスト</Item>
+            </MainArea>
+
           </UpperNav>
           <LowerNav>
             <ProfileArea>プロフィール</ProfileArea>
@@ -50,7 +58,9 @@ const Navigation = styled.div`
 
 const UpperNav = styled.div``;
 const LowerNav = styled.div``;
-
+const Item = styled.div`
+font-size: 2rem;
+`;
 const Header = styled.div``;
 const MyTweet = styled.div``;
 const Wrapper = styled.div``;
@@ -58,7 +68,14 @@ const Timeline = styled.div``;
 const LogoArea = styled.div`
   height: 2em;
 `;
-const MainArea = styled.div``;
+const MainArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30em;
+
+
+`;
 const ProfileArea = styled.div`
   margin-bottom: 0;
 `;
