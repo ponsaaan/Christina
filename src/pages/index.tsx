@@ -37,11 +37,20 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-const Navigation = styled.div``;
+const Navigation = styled.div`
+display: flex;
+flex-direction: column;
+width: 20rem;
+`;
+
 const Header = styled.div``;
 const MyTweet = styled.div``;
 const Wrapper = styled.div``;
 const Timeline = styled.div``;
-const LogoArea = styled.div``;
+const LogoArea = styled.div`
+  height: 2em;
+`;
 const MainArea = styled.div``;
-const ProfileArea = styled.div``;
+const ProfileArea = styled.div`
+  margin-bottom: 0;
+`;
