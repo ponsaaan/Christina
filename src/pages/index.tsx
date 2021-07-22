@@ -13,9 +13,13 @@ const Home: React.VFC = () => {
       <GlobalStyle />
       <Container>
         <Navigation>
-          <LogoArea>ロゴ</LogoArea>
-          <MainArea>メイン</MainArea>
-          <ProfileArea>プロフィール</ProfileArea>
+          <UpperNav>
+            <LogoArea>ロゴ</LogoArea>
+            <MainArea>メイン</MainArea>
+          </UpperNav>
+          <LowerNav>
+            <ProfileArea>プロフィール</ProfileArea>
+          </LowerNav>
         </Navigation>
 
         <Wrapper>
@@ -38,10 +42,14 @@ const Container = styled.div`
 `;
 
 const Navigation = styled.div`
-display: flex;
-flex-direction: column;
-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
 `;
+
+const UpperNav = styled.div``;
+const LowerNav = styled.div``;
 
 const Header = styled.div``;
 const MyTweet = styled.div``;
