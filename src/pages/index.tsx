@@ -22,6 +22,9 @@ const Home: React.VFC = () => {
               <Item>メッセージ</Item>
               <Item>ブックマーク</Item>
               <Item>リスト</Item>
+              <Item>
+                <ButtonArea>ツイートする</ButtonArea>
+                </Item>
             </MainArea>
 
           </UpperNav>
@@ -53,17 +56,30 @@ const Navigation = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20rem;
+  width: 30rem;
+  padding-left: 10rem; 
 `;
 
 const UpperNav = styled.div``;
 const LowerNav = styled.div``;
 const Item = styled.div`
-font-size: 2rem;
+  font-size: 2rem;    
+`;
+const ButtonArea = styled.button`
+  width: 14rem;
+  height: 4.6rem;
+  background: #1A91DA;
+  border-radius: 10px;
+  border: transparent;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
 `;
 const Header = styled.div``;
 const MyTweet = styled.div``;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+
+`;
 const Timeline = styled.div``;
 const LogoArea = styled.div`
   height: 2em;
@@ -77,5 +93,7 @@ const MainArea = styled.div`
 
 `;
 const ProfileArea = styled.div`
-  margin-bottom: 0;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid black;
 `;
