@@ -59,20 +59,28 @@ const Navigation = styled.div`
 const UpperNav = styled.div``;
 const LowerNav = styled.div``;
 const Item = styled.div`
-font-size: 2rem;
+  font-size: 2rem;
 `;
-const Header = styled.div``;
-const MyTweet = styled.div``;
+const Header = styled.div`
+  font-size: 2rem;
+`;
+
+const MyTweet = styled.div`
+height: 5em;
+width: 30rem;
+font-size: 2rem;
+display: flex;
+`;
 const Wrapper = styled.div``;
 const Timeline = styled.div``;
 const LogoArea = styled.div`
   height: 2em;
 `;
 const MainArea = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 30em;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 30em;
 
 
 `;
