@@ -34,8 +34,19 @@ const Home: React.VFC = () => {
         </Navigation>
 
         <Wrapper>
-          <Header>ヘッダー</Header>
-          <MyTweet>自分が投稿する場所</MyTweet>
+          <Header>ホーム</Header>
+          <MyTweet>
+          <ProfileIcon>( ^ω^ )</ProfileIcon>
+          <TweetArea>
+            <TweetAreaUpper>自分が投稿するエリア</TweetAreaUpper>
+            <TweetAreaLower>
+              <IconArea>写像</IconArea>
+              <TweetButton>ツイートする</TweetButton>
+
+            </TweetAreaLower>
+
+          </TweetArea>
+          </MyTweet>
           <Timeline>タイムライン</Timeline>
         </Wrapper>
       </Container>
@@ -75,12 +86,24 @@ const ButtonArea = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
 `;
-const Header = styled.div``;
-const MyTweet = styled.div``;
-const Wrapper = styled.div`
-
+const Header = styled.div`
+  font-size: 2rem;
+  width: 60rem;
 `;
-const Timeline = styled.div``;
+const MyTweet = styled.div`
+  font-size: 2rem;
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+`;
+const Wrapper = styled.div`
+  width: 60rem;
+  padding-left: 6rem;
+`;
+const Timeline = styled.div`
+background: yellow;
+width: 60rem;
+`;
 const LogoArea = styled.div`
   height: 2em;
 `;
@@ -97,3 +120,24 @@ const ProfileArea = styled.div`
   height: 5rem;
   border: 1px solid black;
 `;
+
+const ProfileIcon = styled.div`  
+background: blue;
+height: 100%;
+width: 12.2%;
+`;
+const TweetArea = styled.div`
+background: red;
+height: 100%;
+width: 87.8%;
+`;
+const TweetAreaUpper = styled.div`
+height: 7em;
+`;
+const TweetAreaLower = styled.div`
+height: 3em;
+display: flex;`;
+const IconArea = styled.div`
+  width: 70%;`;
+const TweetButton = styled.div`
+  width: 30%;`;
