@@ -140,7 +140,10 @@ const ProfileIcon = styled.div`
   height: 100%;
   width: 12.2%;
 `;
-const ProfileIconItem = styled.img``;
+const ProfileIconItem = styled.img`
+  height: auto;
+  width: 100%;
+`;
 const TweetArea = styled.div`
   background: red;
   height: 100%;
