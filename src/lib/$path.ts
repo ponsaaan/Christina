@@ -18,6 +18,7 @@ export type PagesPath = typeof pagesPath
 // prettier-ignore
 export const staticPath = {
   favicon_ico: '/favicon.ico',
+  samlepp_ico: '/samlepp.ico',
   vercel_svg: '/vercel.svg'
 } as const
 

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 import { GlobalStyle } from '../GlobalStyle';
+import { staticPath } from '@/lib/$path';
 
 const Home: React.VFC = () => {
   return (
@@ -36,7 +37,11 @@ const Home: React.VFC = () => {
           <Header>ホーム</Header>
           <MyTweet>
             <ProfileIcon>
-              <link rel="icon" href="/sampleprofilephoto.ico" />
+              <ProfileIconItem
+                src={staticPath.samlepp_ico}
+                alt="aaa"
+                width="16"
+              />
             </ProfileIcon>
             <TweetArea>
               <TweetAreaUpper>
@@ -44,7 +49,7 @@ const Home: React.VFC = () => {
                   type="text"
                   placeholder="いまどうしてる？"
                 ></TweetTextInput>
-                <TweetTextInputSub>🌍全員が返信できます</TweetTextInputSub>
+                <TweetTextInputSub>全員が返信できます</TweetTextInputSub>
                 <TweetTextUnderLine></TweetTextUnderLine>
               </TweetAreaUpper>
               <TweetAreaLower>
@@ -79,6 +84,7 @@ const Navigation = styled.div`
 
 const UpperNav = styled.div``;
 const LowerNav = styled.div``;
+
 const Item = styled.div`
   font-size: 2rem;
   color: #d9d9d9;
@@ -134,6 +140,7 @@ const ProfileIcon = styled.div`
   height: 100%;
   width: 12.2%;
 `;
+const ProfileIconItem = styled.img``;
 const TweetArea = styled.div`
   background: red;
   height: 100%;
