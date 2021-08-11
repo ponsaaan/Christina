@@ -36,9 +36,15 @@ const Home: React.VFC = () => {
         <Wrapper>
           <Header>ホーム</Header>
           <MyTweet>
-          <ProfileIcon>( ^ω^ )</ProfileIcon>
+          <ProfileIcon>
+          <link rel="icon" href="/sampleprofilephoto.ico" />
+          </ProfileIcon>
           <TweetArea>
-            <TweetAreaUpper>自分が投稿するエリア</TweetAreaUpper>
+            <TweetAreaUpper>
+              <TweetTextInput type="text"　placeholder="いまどうしてる？" ></TweetTextInput>
+              <TweetTextInputSub>🌍全員が返信できます</TweetTextInputSub>
+              <TweetTextUnderLine></TweetTextUnderLine>
+              </TweetAreaUpper>
             <TweetAreaLower>
               <IconArea>写像</IconArea>
               <TweetButton>ツイートする</TweetButton>
@@ -55,6 +61,9 @@ const Home: React.VFC = () => {
 };
 
 export default Home;
+
+
+
 
 const Container = styled.div`
   display: flex;
@@ -75,6 +84,7 @@ const UpperNav = styled.div``;
 const LowerNav = styled.div``;
 const Item = styled.div`
   font-size: 2rem;    
+  color: #D9D9D9;
 `;
 const ButtonArea = styled.button`
   width: 14rem;
@@ -88,6 +98,7 @@ const ButtonArea = styled.button`
 `;
 const Header = styled.div`
   font-size: 2rem;
+  color: #D9D9D9;
   width: 60rem;
 `;
 const MyTweet = styled.div`
@@ -106,6 +117,7 @@ width: 60rem;
 `;
 const LogoArea = styled.div`
   height: 2em;
+  color: #D9D9D9;
 `;
 const MainArea = styled.div`
   display: flex;
@@ -119,6 +131,7 @@ const ProfileArea = styled.div`
   width: 100%;
   height: 5rem;
   border: 1px solid black;
+  color: #D9D9D9;
 `;
 
 const ProfileIcon = styled.div`  
@@ -133,11 +146,47 @@ width: 87.8%;
 `;
 const TweetAreaUpper = styled.div`
 height: 7em;
+background-color: #000000;
+
 `;
 const TweetAreaLower = styled.div`
 height: 3em;
 display: flex;`;
 const IconArea = styled.div`
   width: 70%;`;
-const TweetButton = styled.div`
-  width: 30%;`;
+const TweetButton = styled.button`
+  width: 14rem;
+  height: 4.6rem;
+  background: #1A91DA;
+  border-radius: 10px;
+  border: transparent;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  `;
+const TweetTextInput = styled.input`
+   font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #D9D9D9;
+   `;
+   const TweetTextInputSub = styled.button`
+   width: 14rem;
+  height: 4.6rem;
+  background: #000000;
+  border-radius: 10px;
+  border: transparent;
+  color: #1DA1F2;
+  font-size: 1rem;
+  cursor: pointer;
+   `;
+   const TweetTextUnderLine = styled.div`
+   position: relative; 
+    border-top: 1px solid #c2c2c2; 
+   `;
+   

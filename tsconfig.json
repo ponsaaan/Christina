@@ -1,37 +1,41 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "CommonJS",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "sourceMap": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "jsx": "preserve",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "downlevelIteration": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "baseUrl": "./",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
-  "downlevelIteration": true,
-  "allowJs": true,
-  "skipLibCheck": true,
-  "forceConsistentCasingInFileNames": true,
-  "noEmit": true,
-  "moduleResolution": "node",
-  "resolveJsonModule": true,
-  "isolatedModules": true,
-  "baseUrl": "src",
-  "allowSyntheticDefaultImports": true,
-  "noFallthroughCasesInSwitch": true,
-  "lib": [
-    "DOM",
-    "ESNext"
+  "include": [
+    "src/**/*",
+    ".eslintrc.js"
   ],
-  "paths": {
-    "@/*": ["src/*"]
-  },
-  "include": ["next-env.d.ts", "src/**/*", ".eslintrc.js"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
