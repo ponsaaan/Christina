@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const prettierrc = require('./.prettierrc.js');
 
 module.exports = {

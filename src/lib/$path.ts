@@ -1,6 +1,9 @@
 /* eslint-disable */
 // prettier-ignore
 export const pagesPath = {
+  home: {
+
+  },
   posts: {
     first_post: {
       $url: (url?: { hash?: string }) => ({ pathname: '/posts/first-post' as const, hash: url?.hash })
