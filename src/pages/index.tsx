@@ -15,7 +15,13 @@ const Home: React.VFC = () => {
       <Container>
         <Navigation>
           <UpperNav>
-            <LogoArea>ロゴ</LogoArea>
+            <LogoArea>
+              <LogoIconItem
+                src={staticPath.twittericon_ico}
+                alt="aaa"
+                width="16"
+              />
+            </LogoArea>
             <MainArea>
               <Item>ホーム</Item>
               <Item>話題の検索</Item>
@@ -122,6 +128,11 @@ const LogoArea = styled.div`
   height: 2em;
   color: #d9d9d9;
 `;
+const LogoIconItem = styled.img`
+  height: auto;
+  width: auto;
+`;
+
 const MainArea = styled.div`
   display: flex;
   flex-direction: column;

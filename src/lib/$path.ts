@@ -21,6 +21,7 @@ export const staticPath = {
   favicon_ico: '/favicon.ico',
   samlepp_ico: '/samlepp.ico',
   samplepp_ico: '/samplepp.ico',
+  twittericon_ico: '/twittericon.ico',
   vercel_svg: '/vercel.svg'
 } as const
 
