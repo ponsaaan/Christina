@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import { GlobalStyle } from '../GlobalStyle';
 import { staticPath } from '@/lib/$path';
+import LogoIcon from '@/components/LogoIcon';
 
 const Home: React.VFC = () => {
   return (
@@ -16,11 +17,7 @@ const Home: React.VFC = () => {
         <Navigation>
           <UpperNav>
             <LogoArea>
-              <LogoIconItem
-                src={staticPath.twittericon_ico}
-                alt="aaa"
-                width="16"
-              />
+              <LogoIcon></LogoIcon>
             </LogoArea>
             <MainArea>
               <Item>
@@ -387,10 +384,6 @@ const Wrapper = styled.div`
 const LogoArea = styled.div`
   height: 4em;
 `;
-const LogoIconItem = styled.img`
-  height: 4em;
-  width: 4em;
-`;
 
 const MainArea = styled.div`
   display: flex;
@@ -523,8 +516,8 @@ const ReplyIcon = styled.div`
 `;
 const ReplyIconSpan = styled.span`
   padding-left: 8rem;
-  }
 `;
+
 const ReplyIconArea = styled.span`
   :hover {
     background-color: rgba(29, 161, 242, 0.1);
